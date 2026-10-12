@@ -45,3 +45,14 @@ int main() {
 	
 return 0;
 }
+
+
+/*
+Sample Input:
+3
+10 60
+20 100
+30 120
+50
+Output: 240
+*/
