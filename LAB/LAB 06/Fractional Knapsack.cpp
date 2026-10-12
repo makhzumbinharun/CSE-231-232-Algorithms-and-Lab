@@ -5,20 +5,18 @@ struct Item{
   int weight;
   double ratio;
 };
-
 bool compare(Item a, Item b){
     return a.ratio > b.ratio;
 }
-
 int main() {
 	int n, capacity;
 	cout << "Enter number of items: ";
 	cin >> n;
 	Item items[n];
 	
-	cout << "Enter weight and value of each items: ";
+	cout << "Enter value and weight of each items: ";
 	for(int i = 0; i < n; i++){
-	    cin >> items[i].weight >> items[i].value;
+	    cin >> items[i].value >> items[i].weight;
 	}
 	
 	cin >> capacity;
@@ -45,14 +43,3 @@ int main() {
 	
 return 0;
 }
-
-
-/*
-Sample Input:
-3
-10 60
-20 100
-30 120
-50
-Output: 240
-*/
